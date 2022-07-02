@@ -154,3 +154,40 @@ color: #000000;
   background: rgba(227, 233, 240, 0.32);
   border-radius: 6px;
 }
+
+.add-image-video-button {
+  top: 525px;
+  left: 30px;
+  width: 150px;
+  height: 44px;
+
+  border-radius: 16px;
+}
+
+.add-poll-button {
+  top: 525px;
+  left: 40px;
+  width: 85px;
+  height: 44px;
+
+  border-radius: 16px;
+
+}
+
+.add-gif-button {
+  top: 525px;
+  left: 50px;
+  width: 50px;
+  height: 44px;
+
+  border-radius: 16px;
+}
+
+.add-post-button {
+  width: 364px;
+  height: 56px;
+  top: 550px;
+  left: 30px;
+  background: linear-gradient(180deg, #2D87FF 0%, #6099E5 100%);
+  border-radius: 60px;
+}

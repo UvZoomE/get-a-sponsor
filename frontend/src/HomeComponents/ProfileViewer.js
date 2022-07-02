@@ -1,5 +1,8 @@
 import { useState } from 'react';
-import '../style-sheets/ProfileViewer.css'
+import '../style-sheets/ProfileViewer.css';
+import { Button } from '@mui/material'
+import {faPaperclip, faPoll, faPlus, faPaperPlane} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ProfileViewer = () => {
   const [updateStatus, setUpdateStatus] = useState()
@@ -16,7 +19,10 @@ const ProfileViewer = () => {
       <h4 className='users-name'>USER</h4>
       <p className='users-bio'>DESCRIPTION/ BIO</p>
       <textarea className='users-update' placeholder='How are you feeling?' onChange={(e) => setUpdateStatus(e.target.value)}/>
-      <button className='add-image-button'>Add image</button>
+      <Button type='file' variant='outlined' className='add-image-video-button' startIcon={<FontAwesomeIcon icon={faPaperclip}/>}>Attachment</Button>
+      <Button variant='outlined' className='add-poll-button' startIcon={<FontAwesomeIcon icon={faPoll}/>}>Poll</Button>
+      <Button variant='outlined' className='add-gif-button' endIcon={<FontAwesomeIcon icon={faPlus}/>}>GIF</Button>
+      <Button variant='outlined' sx={{color: 'white'}} className='add-post-button' startIcon={<FontAwesomeIcon icon={faPaperPlane}/>}>Post</Button>
     </div>
   )
 }
